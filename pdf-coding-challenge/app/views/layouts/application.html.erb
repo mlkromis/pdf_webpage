@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
   <head>
     <title>PdfCodingChallenge</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
+    <meta http-equiv = "Content-Language" content = "en-us" />
+    <%= stylesheet_link_tag "style" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body id = "PDF-form">
+    <div id = "container">
+
+      <div id = "header">
+        <h1>Application PDF Generation</h1>
+        <h3>Fill each entry listed below. After submission you will be able to view and download the generated PDF.</h3>
+      </div>
+      <hr>
+
+      <div id = "content">
+        <%= yield -%>
+      </div>
+
+      <div id = "sidebar"></div>
+
+    </div>
   </body>
 </html>

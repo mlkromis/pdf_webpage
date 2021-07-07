@@ -1,0 +1,38 @@
+<%= form_tag :action => 'submit' do %>
+  <p><label for = "NAME (FIRST, MIDDLE, LAST)">NAME (FIRST, MIDDLE, LAST): </label>
+    <br/><%= text_field 'pdf_form', 'NAME (FIRST, MIDDLE, LAST)', :placeholder => "Jane, Marie, Doe" %></p>
+
+  <p><label for = "OTHER_NAMES_MAIDEN_NICKNAMES_ETC">OTHER NAMES (MAIDEN, NICKNAMES):</label>
+    <br/><%= text_field 'pdf_form', 'OTHER_NAMES_MAIDEN_NICKNAMES_ETC', :placeholder => "Jane, Marie, Johnson" %></p>
+
+  <p><label for = "SSN">SOCIAL SECURITY NUMBER:</label>
+    <br/><%= text_field 'pdf_form', 'SSN', :placeholder => "123456789" %></p>
+
+  <p><label for = "HOME_ADDRESS_OR_DIRECTIONS_TOYOUR_HOME">HOME ADDRESS (OR DIRECTIONS TO YOUR HOME):</label>
+    <br/><%= text_field 'pdf_form', 'HOME_ADDRESS_OR_DIRECTIONS_TOYOUR_HOME', :placeholder => "123 main St" %></p>
+
+  <p><label for = "APARTMENT">APARTMENT #:</label>
+    <br/><%= text_field 'pdf_form', 'APARTMENT', :placeholder => "#3" %></p>
+
+  <p><label for = "CITY">CITY:</label>
+    <br/><%= text_field 'pdf_form', 'CITY', :placeholder => "New York" %></p>
+
+  <p><label for = "COUNTY">COUNTY:</label>
+    <br/><%= text_field 'pdf_form', 'COUNTY', :placeholder => "Bronx" %></p>
+
+  <p><label for = "STATE">STATE (Abbreviation):</label>
+    <br/><%= text_field 'pdf_form', 'STATE', :placeholder => "NY" %></p>
+
+  <p><label for = "ZIP_CODE">ZIP CODE:</label>
+    <br/><%= text_field 'pdf_form', 'ZIP_CODE', :placeholder => "12345" %></p>
+
+  <p><label for = "HOME_PHONE">PHONE NUMBER:</label>
+    <br/><%= text_field 'pdf_form', 'HOME_PHONE', :placeholder => "5551234567" %></p>
+
+  <p><label for = "EMAIL_ADDRESS">EMAIL ADDRESS:</label>
+    <br/><%= text_field 'pdf_form', 'EMAIL_ADDRESS', :placeholder => "sample@gmail.com" %></p>
+
+  <%= submit_tag "submit"%>
+
+<% end -%>
+

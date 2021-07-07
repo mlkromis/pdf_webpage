@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
-  # Add a route for the web form
+  #starting point of website
+  root 'pdf_form#form'
+
+  #routing to submit through post method
+  post 'pdf_form/submit'
 
 end
