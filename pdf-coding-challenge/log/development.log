@@ -3523,3 +3523,17 @@ Processing by PdfFormController#form as HTML
 Completed 200 OK in 551ms (Views: 487.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-07-08 12:17:51 -0500
+Processing by PdfFormController#form as HTML
+  Rendering pdf_form/form.html.erb within layouts/application
+  Rendered pdf_form/form.html.erb within layouts/application (225.3ms)
+Completed 200 OK in 1386ms (Views: 1275.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pdf_form/submit" for 127.0.0.1 at 2021-07-08 12:18:10 -0500
+Processing by PdfFormController#submit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mSpTecv5QaeNp4CfhGpd0S1FQzzg0ygiAtoxjnNikGCvFtjbXCbW2ZILAzhpuqK54ZWkeOlXscqIWw+4p/BuJQ==", "pdf_form"=>{"NAME (FIRST, MIDDLE, LAST)"=>"asdf", "OTHER_NAMES_MAIDEN_NICKNAMES_ETC"=>";lkj", "SSN"=>";lk", "HOME_ADDRESS_OR_DIRECTIONS_TOYOUR_HOME"=>"nkljb", "APARTMENT"=>"lk", "CITY"=>"jb", "COUNTY"=>"lkjb", "STATE"=>"lkj", "ZIP_CODE"=>"bkljb", "HOME_PHONE"=>"kljb", "EMAIL_ADDRESS"=>"kjb"}, "commit"=>"submit"}
+Sent file C:/Users/jeffr/OneDrive/Desktop/Maria/pdf/pdf_webpage/pdf-coding-challenge/public/completed_application.pdf (0.0ms)
+Completed 200 OK in 1336ms (ActiveRecord: 0.0ms)
+
+
